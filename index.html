@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurea Nails Studio | Manicura, Gel y Nail Art en Puebla</title>
+    <meta name="description" content="Aurea Nails Studio en Puebla, Col. La Paz. Manicura rusa, gel y nail art. Reserva por WhatsApp en 1 minuto. 4.9 estrellas, +500 clientas felices.">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NailSalon",
+      "name": "Aurea Nails Studio",
+      "description": "Salón de manicura rusa, gel y nail art en Puebla, Col. La Paz. Reserva por WhatsApp en 1 minuto.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Teziutlán Sur 48, Col. La Paz",
+        "addressLocality": "Puebla",
+        "addressRegion": "Puebla",
+        "postalCode": "72160",
+        "addressCountry": "MX"
+      },
+      "telephone": "+52 222 123 4567",
+      "priceRange": "$$",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "87"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+          "opens": "10:00",
+          "closes": "19:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Sunday",
+          "opens": "11:00",
+          "closes": "16:00"
+        }
+      ],
+      "sameAs": ["https://www.instagram.com/aurea.nails.puebla"]
+    }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#FFF9F5',
+                        nude: '#F6E8E0',
+                        terracotta: {
+                            DEFAULT: '#C98A7A',
+                            hover: '#B37262',
+                            light: '#EAD5CE',
+                            soft: '#F4E7E2'
+                        },
+                        espresso: '#2B211D',
+                        warmgray: '#5C4B44',
+                        gold: '#D4AF7A',
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Manrope', 'sans-serif'],
+                    },
+                    borderRadius: {
+                        '3xl': '1.75rem',
+                        '4xl': '2.25rem',
+                    },
+                    boxShadow: {
+                        'soft': '0 10px 30px -10px rgba(43, 33, 29, 0.08)',
+                        'floating': '0 20px 40px -15px rgba(201, 138, 122, 0.25)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #FFF9F5;
+            color: #2B211D;
+            font-family: 'Manrope', sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* Animaciones de revelado al hacer scroll */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Pulsación sutil para WhatsApp */
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
+            50% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+        }
+        .whatsapp-pulse {
+            animation: pulse-glow 2.5s infinite;
+        }
+
+        /* Estilo personalizado de barra de desplazamiento */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FFF9F5;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #C98A7A;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #B37262;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-terracotta/20 selection:text-espresso pb-20 md:pb-0">
+
+    <!-- HEADER / NAVEGACIÓN -->
+    <header id="main-header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-cream/90 backdrop-blur-md py-4 border-b border-transparent">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#" class="flex flex-col group">
+                <span class="font-serif text-2xl sm:text-3xl tracking-tight text-espresso font-bold group-hover:text-terracotta transition-colors">Aurea</span>
+                <span class="text-[10px] sm:text-xs tracking-[0.25em] uppercase text-warmgray font-medium -mt-1">Nails Studio</span>
+            </a>
+
+            <!-- Menú de Navegación Desktop -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-warmgray">
+                <a href="#servicios" class="hover:text-terracotta transition-colors">Servicios</a>
+                <a href="#galeria" class="hover:text-terracotta transition-colors">Galería</a>
+                <a href="#resenas" class="hover:text-terracotta transition-colors">Reseñas</a>
+                <a href="#ubicacion" class="hover:text-terracotta transition-colors">Ubicación</a>
+            </nav>
+
+            <!-- Botón Reservar Desktop -->
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="https://wa.me/522221234567?text=Hola%20Aurea%20Nails,%20me%20gustaría%20agendar%20una%20cita." target="_blank" rel="noopener" class="bg-terracotta hover:bg-terracotta-hover text-white text-sm font-semibold px-6 py-2.5 rounded-full shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5 flex items-center gap-2">
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                    Reservar
+                </a>
+            </div>
+
+            <!-- Botón Menú Móvil (Hamburguesa) -->
+            <button id="mobile-menu-btn" class="md:hidden p-2 text-espresso focus:outline-none" aria-label="Abrir Menú">
+                <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+                <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Menú Desplegable Móvil -->
+        <div id="mobile-menu" class="hidden md:hidden bg-nude/95 backdrop-blur-lg border-b border-terracotta/20 px-6 py-6 transition-all duration-300">
+            <div class="flex flex-col space-y-4 text-center font-medium text-espresso">
+                <a href="#servicios" class="mobile-link py-2 hover:text-terracotta border-b border-terracotta/10">Servicios</a>
+                <a href="#galeria" class="mobile-link py-2 hover:text-terracotta border-b border-terracotta/10">Galería</a>
+                <a href="#resenas" class="mobile-link py-2 hover:text-terracotta border-b border-terracotta/10">Reseñas</a>
+                <a href="#ubicacion" class="mobile-link py-2 hover:text-terracotta border-b border-terracotta/10">Ubicación</a>
+                <a href="https://wa.me/522221234567?text=Hola%20Aurea%20Nails,%20me%20gustaría%20agendar%20una%20cita." target="_blank" rel="noopener" class="mobile-link bg-terracotta text-white py-3 rounded-full font-semibold shadow-md mt-2 flex items-center justify-center gap-2">
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                    Reservar por WhatsApp
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HÉROE (HERO SECTION) -->
+    <section class="relative pt-32 pb-16 md:pt-44 md:pb-28 overflow-hidden bg-gradient-to-b from-cream via-cream to-nude/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+                
+                <!-- Columna Texto -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left reveal">
+                    <!-- Badge -->
+                    <div class="inline-flex items-center gap-2 bg-nude border border-terracotta/30 rounded-full px-4 py-1.5 text-xs sm:text-sm font-semibold text-espresso">
+                        <span class="text-gold">★ 4.9</span>
+                        <span class="text-warmgray">(87 reseñas)</span>
+                        <span class="text-terracotta">•</span>
+                        <span>+500 clientas felices</span>
+                    </div>
+
+                    <!-- Título Principal -->
+                    <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl text-espresso font-bold leading-[1.15] tracking-tight">
+                        Manos felices,<br class="hidden sm:inline"/>
+                        <span class="italic font-normal text-terracotta">uñas con carácter</span>
+                    </h1>
+
+                    <!-- Subtítulo -->
+                    <p class="text-base sm:text-lg text-warmgray max-w-xl mx-auto lg:mx-0 leading-relaxed font-normal">
+                        Manicura rusa, gel y nail art hecho con precisión y delicadeza en Puebla. Reserva tu cita en menos de 1 minuto por WhatsApp.
+                    </p>
+
+                    <!-- Botones de Acción -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="https://wa.me/522221234567?text=Hola%20Aurea%20Nails,%20quiero%20reservar%20una%20cita." target="_blank" rel="noopener" class="w-full sm:w-auto bg-terracotta hover:bg-terracotta-hover text-white font-semibold px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 text-center flex items-center justify-center gap-3 transform hover:-translate-y-0.5">
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                            Reservar por WhatsApp
+                        </a>
+                        <a href="#servicios" class="w-full sm:w-auto bg-white/80 border border-terracotta/30 text-espresso hover:bg-nude font-semibold px-7 py-4 rounded-full shadow-sm hover:shadow transition-all duration-300 text-center">
+                            Ver servicios y precios
+                        </a>
+                    </div>
+
+                    <!-- Garantía corta -->
+                    <div class="pt-2 text-xs text-warmgray flex items-center justify-center lg:justify-start gap-4">
+                        <span class="flex items-center gap-1.5">
+                            <svg class="w-4 h-4 text-terracotta" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Atención personalizada
+                        </span>
+                        <span class="flex items-center gap-1.5">
+                            <svg class="w-4 h-4 text-terracotta" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            Cita en 1 minuto
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Columna Imagen -->
+                <div class="lg:col-span-5 reveal">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <!-- Elemento decorativo flotante -->
+                        <div class="absolute -top-4 -left-4 w-32 h-32 bg-nude rounded-full blur-2xl opacity-70"></div>
+                        <div class="absolute -bottom-6 -right-6 w-40 h-40 bg-terracotta-light rounded-full blur-2xl opacity-60"></div>
+
+                        <!-- Imagen Principal -->
+                        <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-cream">
+                            <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=1200&q=85" alt="Uñas elegantes Aurea Nails Studio Puebla" class="w-full h-[420px] sm:h-[480px] object-cover object-center transform hover:scale-105 transition-transform duration-700">
+                            
+                            <!-- Card superpuesta -->
+                            <div class="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-md p-4 rounded-2xl border border-white/50 shadow-lg flex items-center justify-between">
+                                <div>
+                                    <p class="text-xs font-bold uppercase tracking-wider text-terracotta">Ubicación Puebla</p>
+                                    <p class="text-sm font-semibold text-espresso">Colonia La Paz, Puebla</p>
+                                </div>
+                                <span class="bg-nude text-espresso text-xs font-bold px-3 py-1.5 rounded-full border border-terracotta/20">
+                                    4.9 ★
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- BENEFICIOS / POR QUÉ ELEGIRNOS -->
+    <section class="py-16 bg-cream border-y border-nude">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+                
+                <!-- Card 1 -->
+                <div class="bg-nude/50 hover:bg-nude p-6 rounded-2xl border border-terracotta/15 transition-all duration-300 reveal">
+                    <div class="w-12 h-12 bg-cream rounded-2xl flex items-center justify-center text-terracotta mb-4 shadow-sm">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    </div>
+                    <h3 class="font-serif text-lg font-bold text-espresso mb-2">Material Esterilizado</h3>
+                    <p class="text-sm text-warmgray leading-relaxed">Autoclave de grado médico e instrumental individual para tu total seguridad y tranquilidad.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-nude/50 hover:bg-nude p-6 rounded-2xl border border-terracotta/15 transition-all duration-300 reveal" style="transition-delay: 100ms;">
+                    <div class="w-12 h-12 bg-cream rounded-2xl flex items-center justify-center text-terracotta mb-4 shadow-sm">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path></svg>
+                    </div>
+                    <h3 class="font-serif text-lg font-bold text-espresso mb-2">Diseños Personalizados</h3>
+                    <p class="text-sm text-warmgray leading-relaxed">Trae tu idea de Pinterest o Instagram. Realizamos nail art detallado a mano alzada.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-nude/50 hover:bg-nude p-6 rounded-2xl border border-terracotta/15 transition-all duration-300 reveal" style="transition-delay: 200ms;">
+                    <div class="w-12 h-12 bg-cream rounded-2xl flex items-center justify-center text-terracotta mb-4 shadow-sm">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h3 class="font-serif text-lg font-bold text-espresso mb-2">Duración 3-4 Semanas</h3>
+                    <p class="text-sm text-warmgray leading-relaxed">Técnica rusa de nivelación que protege tu uña natural evitando levantamientos prematuros.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-nude/50 hover:bg-nude p-6 rounded-2xl border border-terracotta/15 transition-all duration-300 reveal" style="transition-delay: 300ms;">
+                    <div class="w-12 h-12 bg-cream rounded-2xl flex items-center justify-center text-terracotta mb-4 shadow-sm">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                    </div>
+                    <h3 class="font-serif text-lg font-bold text-espresso mb-2">Ambiente Relajado</h3>
+                    <p class="text-sm text-warmgray leading-relaxed">Disfruta de café de especialidad, té herbal o bebida refrescante mientras te consentimos.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- NUESTROS SERVICIOS -->
+    <section id="servicios" class="py-20 md:py-28 bg-cream relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Encabezado de sección -->
+            <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+                <span class="text-terracotta font-semibold text-xs tracking-widest uppercase">Menú de Experiencias</span>
+                <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-espresso mt-2">Nuestros Servicios</h2>
+                <p class="text-warmgray mt-4 text-base">Precios claros, sin sorpresas. Incluye preparación detallada de la cutícula e hidratación.</p>
+            </div>
+
+            <!-- Grilla de Servicios (6 Tarjetas con fotos acordes) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Servicio 1: Manicura rusa + gel -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-soft border border-terracotta/10 hover:shadow-xl transition-all duration-300 flex flex-col reveal">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=800&q=80" alt="Manicura rusa y esmaltado en gel" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-4 right-4 bg-cream/90 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-espresso shadow-sm">
+                            60 min
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-baseline mb-2">
+                                <h3 class="font-serif text-xl font-bold text-espresso">Manicura rusa + gel</h3>
+                                <span class="font-serif text-xl font-bold text-terracotta">$320 <span class="text-xs font-sans text-warmgray">MXN</span></span>
+                            </div>
+                            <p class="text-sm text-warmgray leading-relaxed mb-6"> Limpieza profunda de cutícula con torno, nivelación protectora de la uña natural y esmaltado de alta duración.</p>
+                        </div>
+                        <a href="https://wa.me/522221234567?text=Hola%20Aurea%20Nails,%20quiero%20reservar%20Manicura%20rusa%20%2B%20gel%20de%20$320.%20¿Qué%20horarios%20tienes%20disponibles?" target="_blank" rel="noopener" class="w-full bg-nude hover:bg-terracotta hover:text-white text-espresso font-semibold py-3 rounded-2xl text-center text-sm transition-all duration-300 block">
+                            Reservar este servicio
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Servicio 2: Pedicura spa -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-soft border border-terracotta/10 hover:shadow-xl transition-all duration-300 flex flex-col reveal" style="transition-delay: 100ms;">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1519415510236-718bdfcd89c8?auto=format&fit=crop&w=800&q=80" alt="Pedicura spa relajante para pies" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-4 right-4 bg-cream/90 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-espresso shadow-sm">
+                            75 min
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-baseline mb-2">
+                                <h3 class="font-serif text-xl font-bold text-espresso">Pedicura spa</h3>
+                                <span class="font-serif text-xl font-bold text-terracotta">$380 <span class="text-xs font-sans text-warmgray">MXN</span></span>
+                            </div>
+                            <p class="text-sm text-warmgray leading-relaxed mb-6">Exfoliación suave, baño relajante con sales aromáticas, tratamiento de durezas, corte perfecto y esmaltado a elección.</p>
+                        </div>
+                        <a href="https://wa.me/522221234567?text=Hola%20Aurea%20Nails,%20quiero%20reservar%20Pedicura%20spa%20de%20$380.%20¿Qué%20horarios%20tienes%20disponibles?" target="_blank" rel="noopener" class="w-full bg-nude hover:bg-terracotta hover:text-white text-espresso font-semibold py-3 rounded-2xl text-center text-sm transition-all duration-300 block">
+                            Reservar este servicio
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Servicio 3: Uñas acrílicas -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-soft border border-terracotta/10 hover:shadow-xl transition-all duration-300 flex flex-col reveal" style="transition-delay: 200ms;">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=800&q=80" alt="Uñas acrílicas esculpidas largas" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-4 right-4 bg-cream/90 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-espresso shadow-sm">
+                            90 min
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-baseline mb-2">
+                                <h3 class="font-serif text-xl font-bold text-espresso">Uñas acrílicas</h3>
+                                <span class="font-serif text-xl font-bold text-terracotta"><span class="text-xs font-sans text-warmgray">Desde</span> $550 <span class="text-xs font-sans text-warmgray">MXN</span></span>
+                            </div>
+                            <p class="text-sm text-warmgray leading-relaxed mb-6">Esculpidas en tip o forma estructural. Extensiones resistentes con la forma, largo y color de tu preferencia.</p>
+                        </div>
+                        <a href="https://wa.me/522221234567?text=Hola%20Aurea%20Nails,%20quiero%20reservar%20Uñas%20acrílicas%20desde%20$550.%20¿Qué%20horarios%20tienes%20disponibles?" target="_blank" rel="noopener" class="w-full bg-nude hover:bg-terracotta hover:text-white text-espresso font-semibold py-3 rounded-2xl text-center text-sm transition-all duration-300 block">
+                            Reservar este servicio
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Servicio 4: Nail art personalizado -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-soft border border-terracotta/10 hover:shadow-xl transition-all duration-300 flex flex-col reveal">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?auto=format&fit=crop&w=800&q=80" alt="Diseño de nail art detallado hecho a mano" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-4 right-4 bg-cream/90 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-espresso shadow-sm">
+                            Variable
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-baseline mb-2">
+                                <h3 class="font-serif text-xl font-bold text-espresso">Nail art personalizado</h3>
+                                <span class="font-serif text-xl font-bold text-terracotta"><span class="text-xs font-sans text-warmgray">Desde</span> $150 <span class="text-xs font-sans text-warmgray">extra</span></span>
+                            </div>
+                            <p class="text-sm text-warmgray leading-relaxed mb-6">Mano alzada, efectos cromo, francesa moderna, pedrería o stickers. Cotizamos tu diseño previo a la cita.</p>
+                        </div>
+                        <a href="https://wa.me/522221234567?text=Hola%20Aurea%20Nails,%20quiero%20cotizar%20Nail%20art%20personalizado.%20Te%20envío%20mi%20foto." target="_blank" rel="noopener" class="w-full bg-nude hover:bg-terracotta hover:text-white text-espresso font-semibold py-3 rounded-2xl text-center text-sm transition-all duration-300 block">
+                            Reservar este servicio
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Servicio 5: Retiro de gel -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-soft border border-terracotta/10 hover:shadow-xl transition-all duration-300 flex flex-col reveal" style="transition-delay: 100ms;">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1599948128020-9a44505b0d1b?auto=format&fit=crop&w=800&q=80" alt="Retiro de gel y cuidado de uñas naturales" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-4 right-4 bg-cream/90 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-espresso shadow-sm">
+                            30 min
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-baseline mb-2">
+                                <h3 class="font-serif text-xl font-bold text-espresso">Retiro de gel / acrílico</h3>
+                                <span class="font-serif text-xl font-bold text-terracotta">$120 <span class="text-xs font-sans text-warmgray">MXN</span></span>
+                            </div>
+                            <p class="text-sm text-warmgray leading-relaxed mb-6">Retiro seguro sin dañar tu uña natural, seguido de limado suave, aceite hidratante para cutículas y tratamiento endurecedor.</p>
+                        </div>
+                        <a href="https://wa.me/522221234567?text=Hola%20Aurea%20Nails,%20quiero%20reservar%20Retiro%20de%20gel%20de%20$120.%20¿Qué%20horarios%20tienes%20disponibles?" target="_blank" rel="noopener" class="w-full bg-nude hover:bg-terracotta hover:text-white text-espresso font-semibold py-3 rounded-2xl text-center text-sm transition-all duration-300 block">
+                            Reservar este servicio
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Servicio 6: Manicura + Pedicura combo -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-soft border border-terracotta/10 hover:shadow-xl transition-all duration-300 flex flex-col reveal" style="transition-delay: 200ms;">
+                    <div class="relative h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?auto=format&fit=crop&w=800&q=80" alt="Combo completo Manicura y Pedicura Spa" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500">
+                        <div class="absolute top-4 right-4 bg-cream/90 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-espresso shadow-sm">
+                            120 min
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-baseline mb-2">
+                                <h3 class="font-serif text-xl font-bold text-espresso">Manicura + Pedicura combo</h3>
+                                <span class="font-serif text-xl font-bold text-terracotta">$620 <span class="text-xs font-sans text-warmgray">MXN</span></span>
+                            </div>
+                            <p class="text-sm text-warmgray leading-relaxed mb-6">La experiencia consentidora completa. Incluye manicura rusa con gel y pedicura spa profunda en una sola sesión.</p>
+                        </div>
+                        <a href="https://wa.me/522221234567?text=Hola%20Aurea%20Nails,%20quiero%20reservar%20Combo%20Manicura%20%2B%20Pedicura%20de%20$620.%20¿Qué%20horarios%20tienes%20disponibles?" target="_blank" rel="noopener" class="w-full bg-nude hover:bg-terracotta hover:text-white text-espresso font-semibold py-3 rounded-2xl text-center text-sm transition-all duration-300 block">
+                            Reservar este servicio
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERÍA INTERACTIVA -->
+    <section id="galeria" class="py-20 bg-nude/30 border-y border-nude">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12 reveal">
+                <span class="text-terracotta font-semibold text-xs tracking-widest uppercase">Portfolio</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-espresso mt-2">Nuestros Trabajos</h2>
+                <p class="text-warmgray mt-3 text-sm sm:text-base">Haz clic en cualquier imagen para ampliarla y cotizar ese diseño exacto.</p>
+            </div>
+
+            <!-- Filtros de Galería -->
+            <div class="flex flex-wrap justify-center gap-2 sm:gap-4 mb-10 reveal">
+                <button class="gallery-filter active-filter bg-terracotta text-white font-semibold text-xs sm:text-sm px-5 py-2.5 rounded-full transition-all duration-300" data-filter="todos">Todos</button>
+                <button class="gallery-filter bg-white text-espresso hover:bg-nude border border-terracotta/20 font-semibold text-xs sm:text-sm px-5 py-2.5 rounded-full transition-all duration-300" data-filter="manicura">Manicura</button>
+                <button class="gallery-filter bg-white text-espresso hover:bg-nude border border-terracotta/20 font-semibold text-xs sm:text-sm px-5 py-2.5 rounded-full transition-all duration-300" data-filter="pedicura">Pedicura</button>
+                <button class="gallery-filter bg-white text-espresso hover:bg-nude border border-terracotta/20 font-semibold text-xs sm:text-sm px-5 py-2.5 rounded-full transition-all duration-300" data-filter="nailart">Nail Art</button>
+            </div>
+
+            <!-- Grid de Fotos de Galería -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6" id="gallery-grid">
+                
+                <!-- Foto 1 -->
+                <div class="gallery-item manicura group relative rounded-2xl overflow-hidden cursor-pointer shadow-sm aspect-square bg-cream reveal">
+                    <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=600&q=80" alt="Esmaltado gel nude brillante" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-espresso/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4 text-center">
+                        <span class="text-white font-medium text-xs sm:text-sm bg-terracotta/90 px-3 py-1.5 rounded-full backdrop-blur-sm">Ver foto</span>
+                    </div>
+                </div>
+
+                <!-- Foto 2 -->
+                <div class="gallery-item nailart group relative rounded-2xl overflow-hidden cursor-pointer shadow-sm aspect-square bg-cream reveal">
+                    <img src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?auto=format&fit=crop&w=600&q=80" alt="Nail art minimalista a mano" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-espresso/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4 text-center">
+                        <span class="text-white font-medium text-xs sm:text-sm bg-terracotta/90 px-3 py-1.5 rounded-full backdrop-blur-sm">Ver foto</span>
+                    </div>
+                </div>
+
+                <!-- Foto 3 -->
+                <div class="gallery-item pedicura group relative rounded-2xl overflow-hidden cursor-pointer shadow-sm aspect-square bg-cream reveal">
+                    <img src="https://images.unsplash.com/photo-1519415510236-718bdfcd89c8?auto=format&fit=crop&w=600&q=80" alt="Pedicura profesional spa" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-espresso/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4 text-center">
+                        <span class="text-white font-medium text-xs sm:text-sm bg-terracotta/90 px-3 py-1.5 rounded-full backdrop-blur-sm">Ver foto</span>
+                    </div>
+                </div>
+
+                <!-- Foto 4 -->
+                <div class="gallery-item manicura group relative rounded-2xl overflow-hidden cursor-pointer shadow-sm aspect-square bg-cream reveal">
+                    <img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=600&q=80" alt="Uñas acrílicas almendradas" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-espresso/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4 text-center">
+                        <span class="text-white font-medium text-xs sm:text-sm bg-terracotta/90 px-3 py-1.5 rounded-full backdrop-blur-sm">Ver foto</span>
+                    </div>
+                </div>
+
+                <!-- Foto 5 -->
+                <div class="gallery-item nailart group relative rounded-2xl overflow-hidden cursor-pointer shadow-sm aspect-square bg-cream reveal">
+                    <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=80" alt="Diseño de uñas elegantes" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-espresso/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4 text-center">
+                        <span class="text-white font-medium text-xs sm:text-sm bg-terracotta/90 px-3 py-1.5 rounded-full backdrop-blur-sm">Ver foto</span>
+                    </div>
+                </div>
+
+                <!-- Foto 6 -->
+                <div class="gallery-item manicura group relative rounded-2xl overflow-hidden cursor-pointer shadow-sm aspect-square bg-cream reveal">
+                    <img src="https://images.unsplash.com/photo-1599948128020-9a44505b0d1b?auto=format&fit=crop&w=600&q=80" alt="Manicura limpia natural" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-espresso/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4 text-center">
+                        <span class="text-white font-medium text-xs sm:text-sm bg-terracotta/90 px-3 py-1.5 rounded-full backdrop-blur-sm">Ver foto</span>
+                    </div>
+                </div>
+
+                <!-- Foto 7 -->
+                <div class="gallery-item pedicura group relative rounded-2xl overflow-hidden cursor-pointer shadow-sm aspect-square bg-cream reveal">
+                    <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?auto=format&fit=crop&w=600&q=80" alt="Experiencia manicura y pedicura" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-espresso/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4 text-center">
+                        <span class="text-white font-medium text-xs sm:text-sm bg-terracotta/90 px-3 py-1.5 rounded-full backdrop-blur-sm">Ver foto</span>
+                    </div>
+                </div>
+
+                <!-- Foto 8 -->
+                <div class="gallery-item nailart group relative rounded-2xl overflow-hidden cursor-pointer shadow-sm aspect-square bg-cream reveal">
+                    <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=600&q=80" alt="Detalle de manicura de precisión" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-espresso/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4 text-center">
+                        <span class="text-white font-medium text-xs sm:text-sm bg-terracotta/90 px-3 py-1.5 rounded-full backdrop-blur-sm">Ver foto</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL LIGHTBOX PARA GALERÍA -->
+    <div id="lightbox-modal" class="fixed inset-0 z-50 bg-espresso/90 backdrop-blur-md hidden flex items-center justify-center p-4 transition-all duration-300">
+        <button id="lightbox-close" class="absolute top-6 right-6 text-white hover:text-gold p-2 focus:outline-none" aria-label="Cerrar modal">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+        <button id="lightbox-prev" class="absolute left-4 sm:left-8 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/40 text-white p-3 rounded-full backdrop-blur-sm transition-colors focus:outline-none" aria-label="Anterior">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+        </button>
+        <button id="lightbox-next" class="absolute right-4 sm:right-8 top-1/2 -translate-y-1/2 bg-white/20 hover:bg-white/40 text-white p-3 rounded-full backdrop-blur-sm transition-colors focus:outline-none" aria-label="Siguiente">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+        </button>
+        <div class="max-w-3xl max-h-[85vh] p-2 flex flex-col items-center">
+            <img id="lightbox-img" src="" alt="Vista ampliada" class="max-w-full max-h-[70vh] rounded-2xl object-contain shadow-2xl border border-white/20">
+            <a id="lightbox-wa-btn" href="https://wa.me/522221234567?text=Hola%20Aurea%20Nails,%20me%20gustó%20este%20diseño%20de%20su%20galería." target="_blank" rel="noopener" class="mt-4 bg-terracotta hover:bg-terracotta-hover text-white text-sm font-semibold px-6 py-3 rounded-full flex items-center gap-2 shadow-lg">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                Quiero este diseño en mi cita
+            </a>
+        </div>
+    </div>
+
+    <!-- CÓMO RESERVAR EN 3 PASOS -->
+    <section class="py-20 bg-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+                <span class="text-terracotta font-semibold text-xs tracking-widest uppercase">Proceso Fácil</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-espresso mt-2">¿Cómo agendar tu cita?</h2>
+                <p class="text-warmgray mt-3 text-sm sm:text-base">Sin sistemas complicados. Directo y en tiempo real.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+                <!-- Paso 1 -->
+                <div class="bg-white p-8 rounded-3xl border border-terracotta/15 shadow-soft text-center relative flex flex-col items-center reveal">
+                    <div class="w-14 h-14 bg-nude text-terracotta font-serif font-bold text-2xl rounded-full flex items-center justify-center mb-6 border border-terracotta/30">1</div>
+                    <h3 class="font-serif text-xl font-bold text-espresso mb-3">Elige tu servicio</h3>
+                    <p class="text-warmgray text-sm leading-relaxed">Selecciona el tratamiento que deseas de nuestro menú o envíanos una foto del diseño que buscas.</p>
+                </div>
+
+                <!-- Paso 2 -->
+                <div class="bg-white p-8 rounded-3xl border border-terracotta/15 shadow-soft text-center relative flex flex-col items-center reveal" style="transition-delay: 150ms;">
+                    <div class="w-14 h-14 bg-nude text-terracotta font-serif font-bold text-2xl rounded-full flex items-center justify-center mb-6 border border-terracotta/30">2</div>
+                    <h3 class="font-serif text-xl font-bold text-espresso mb-3">Escríbenos por WhatsApp</h3>
+                    <p class="text-warmgray text-sm leading-relaxed">Haz clic en agendar. Nos indicarás la fecha y hora que mejor te acomode.</p>
+                </div>
+
+                <!-- Paso 3 -->
+                <div class="bg-white p-8 rounded-3xl border border-terracotta/15 shadow-soft text-center relative flex flex-col items-center reveal" style="transition-delay: 300ms;">
+                    <div class="w-14 h-14 bg-nude text-terracotta font-serif font-bold text-2xl rounded-full flex items-center justify-center mb-6 border border-terracotta/30">3</div>
+                    <h3 class="font-serif text-xl font-bold text-espresso mb-3">Te confirmamos tu cita</h3>
+                    <p class="text-warmgray text-sm leading-relaxed">Recibirás la confirmación inmediata de tu espacio e indicaciones para llegar a nuestro studio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESEÑAS / TESTIMONIOS (CARRUSEL AUTOMÁTICO 5S) -->
+    <section id="resenas" class="py-20 bg-nude/40 border-y border-nude relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 reveal">
+                <span class="text-terracotta font-semibold text-xs tracking-widest uppercase">Opiniones Reales</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-espresso mt-2">Lo que dicen nuestras clientas</h2>
+                <div class="flex items-center justify-center gap-1 text-gold text-lg mt-2">
+                    ★ ★ ★ ★ ★ <span class="text-espresso text-sm font-semibold ml-2">4.9 / 5.0 en Google</span>
+                </div>
+            </div>
+
+            <!-- Contenedor Carrusel -->
+            <div id="testimonial-carousel" class="relative bg-white p-8 sm:p-12 rounded-3xl shadow-soft border border-terracotta/15 reveal min-h-[260px] flex flex-col justify-between">
+                
+                <!-- Items del Carrusel -->
+                <div class="testimonial-slide opacity-100 transition-opacity duration-500">
+                    <div class="text-gold text-xl mb-4">★ ★ ★ ★ ★</div>
+                    <p class="font-serif italic text-lg sm:text-xl text-espresso leading-relaxed mb-6">
+                        "Me duró 4 semanas intacto, ya no cambio de lugar. La manicura rusa deja los dedos impecables y el trato de las chicas es súper amable."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-terracotta-light rounded-full flex items-center justify-center font-bold text-espresso text-sm">MG</div>
+                        <div>
+                            <h4 class="font-semibold text-sm text-espresso">Mariana G.</h4>
+                            <p class="text-xs text-warmgray">Cliente frecuente · Col. La Paz</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-slide opacity-0 absolute inset-0 p-8 sm:p-12 transition-opacity duration-500 pointer-events-none">
+                    <div class="text-gold text-xl mb-4">★ ★ ★ ★ ★</div>
+                    <p class="font-serif italic text-lg sm:text-xl text-espresso leading-relaxed mb-6">
+                        "Llevé un diseño súper complejo de Pinterest y me lo dejaron exactamente igual. Su atención al detalle y la higiene del lugar son de 10."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-terracotta-light rounded-full flex items-center justify-center font-bold text-espresso text-sm">SP</div>
+                        <div>
+                            <h4 class="font-semibold text-sm text-espresso">Sofia P.</h4>
+                            <p class="text-xs text-warmgray">Reseña de Google</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-slide opacity-0 absolute inset-0 p-8 sm:p-12 transition-opacity duration-500 pointer-events-none">
+                    <div class="text-gold text-xl mb-4">★ ★ ★ ★ ★</div>
+                    <p class="font-serif italic text-lg sm:text-xl text-espresso leading-relaxed mb-6">
+                        "La pedicura spa es una maravilla relajante. Salí flotando y mis pies quedaron super suaves. Además el café de cortesía está delicioso."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-terracotta-light rounded-full flex items-center justify-center font-bold text-espresso text-sm">VL</div>
+                        <div>
+                            <h4 class="font-semibold text-sm text-espresso">Valeria L.</h4>
+                            <p class="text-xs text-warmgray">Reseña de Google</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-slide opacity-0 absolute inset-0 p-8 sm:p-12 transition-opacity duration-500 pointer-events-none">
+                    <div class="text-gold text-xl mb-4">★ ★ ★ ★ ★</div>
+                    <p class="font-serif italic text-lg sm:text-xl text-espresso leading-relaxed mb-6">
+                        "Puntuales con el horario de cita, todo muy limpio e instrumental empacado. Se nota el profesionalismo desde que entras."
+                    </p>
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-terracotta-light rounded-full flex items-center justify-center font-bold text-espresso text-sm">CR</div>
+                        <div>
+                            <h4 class="font-semibold text-sm text-espresso">Carolina R.</h4>
+                            <p class="text-xs text-warmgray">Reseña de Google</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controles e Indicadores del Carrusel -->
+                <div class="flex items-center justify-between mt-8 pt-6 border-t border-terracotta/10 z-10">
+                    <!-- Dots -->
+                    <div class="flex items-center space-x-2" id="testimonial-dots">
+                        <button class="dot w-3 h-3 rounded-full bg-terracotta transition-all" data-index="0" aria-label="Testimonio 1"></button>
+                        <button class="dot w-3 h-3 rounded-full bg-terracotta/30 transition-all" data-index="1" aria-label="Testimonio 2"></button>
+                        <button class="dot w-3 h-3 rounded-full bg-terracotta/30 transition-all" data-index="2" aria-label="Testimonio 3"></button>
+                        <button class="dot w-3 h-3 rounded-full bg-terracotta/30 transition-all" data-index="3" aria-label="Testimonio 4"></button>
+                    </div>
+
+                    <!-- Botones Prev/Next -->
+                    <div class="flex space-x-2">
+                        <button id="prev-testimonial" class="p-2 rounded-full border border-terracotta/20 text-espresso hover:bg-nude transition-colors" aria-label="Testimonio anterior">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                        </button>
+                        <button id="next-testimonial" class="p-2 rounded-full border border-terracotta/20 text-espresso hover:bg-nude transition-colors" aria-label="Testimonio siguiente">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PROMOCIÓN DESTACADA -->
+    <section class="py-16 bg-cream">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-r from-nude via-terracotta-soft to-nude rounded-3xl p-8 sm:p-12 border border-terracotta/30 shadow-soft text-center relative overflow-hidden reveal">
+                <span class="inline-block bg-terracotta text-white text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wider mb-4">Promoción Especial</span>
+                <h3 class="font-serif text-2xl sm:text-4xl font-bold text-espresso mb-4">
+                    Primera visita: 10% de descuento en tu primer servicio de gel
+                </h3>
+                <p class="text-warmgray text-base max-w-xl mx-auto mb-8">
+                    Solo por esta semana al reservar tu cita a través de nuestro botón oficial de WhatsApp.
+                </p>
+                <a href="https://wa.me/522221234567?text=Hola%20Aurea%20Nails,%20quiero%20aprovechar%20el%2010%25%20de%20descuento%20de%20primera%20visita." target="_blank" rel="noopener" class="inline-flex items-center gap-3 bg-terracotta hover:bg-terracotta-hover text-white font-semibold px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5">
+                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                    Reclamar 10% y Reservar
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- PREGUNTAS FRECUENTES (ACORDEÓN JS COHERENTE) -->
+    <section class="py-20 bg-cream">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-14 reveal">
+                <span class="text-terracotta font-semibold text-xs tracking-widest uppercase">Resolvemos tus dudas</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-espresso mt-2">Preguntas Frecuentes</h2>
+            </div>
+
+            <div class="space-y-4 reveal">
+                
+                <!-- FAQ Item 1 -->
+                <div class="faq-item border border-terracotta/20 bg-white rounded-2xl overflow-hidden transition-all duration-300">
+                    <button class="faq-toggle w-full text-left p-6 flex justify-between items-center text-espresso font-serif font-bold text-lg hover:text-terracotta transition-colors focus:outline-none">
+                        <span>¿Cuánto dura el gel?</span>
+                        <svg class="faq-icon w-5 h-5 text-terracotta transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-warmgray text-sm leading-relaxed border-t border-terracotta/10 pt-4">
+                        Dura entre 3 y 4 semanas intacto con brillo espejo y sin levantamientos gracias a la preparación rusa y nivelación protectora de la uña natural.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item border border-terracotta/20 bg-white rounded-2xl overflow-hidden transition-all duration-300">
+                    <button class="faq-toggle w-full text-left p-6 flex justify-between items-center text-espresso font-serif font-bold text-lg hover:text-terracotta transition-colors focus:outline-none">
+                        <span>¿Necesito cita?</span>
+                        <svg class="faq-icon w-5 h-5 text-terracotta transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-warmgray text-sm leading-relaxed border-t border-terracotta/10 pt-4">
+                        Sí, trabajamos exclusivamente con cita previa para atenderte sin prisas ni esperas; puedes agendar en 1 minuto por WhatsApp o preguntar por disponibilidad el mismo día.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item border border-terracotta/20 bg-white rounded-2xl overflow-hidden transition-all duration-300">
+                    <button class="faq-toggle w-full text-left p-6 flex justify-between items-center text-espresso font-serif font-bold text-lg hover:text-terracotta transition-colors focus:outline-none">
+                        <span>¿Hacen diseños personalizados?</span>
+                        <svg class="faq-icon w-5 h-5 text-terracotta transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-warmgray text-sm leading-relaxed border-t border-terracotta/10 pt-4">
+                        Sí, puedes enviarnos tu foto de referencia por WhatsApp antes de tu cita para cotizar el detalle y adaptar los colores a tu estilo deseado.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item border border-terracotta/20 bg-white rounded-2xl overflow-hidden transition-all duration-300">
+                    <button class="faq-toggle w-full text-left p-6 flex justify-between items-center text-espresso font-serif font-bold text-lg hover:text-terracotta transition-colors focus:outline-none">
+                        <span>¿Aceptan tarjeta y transferencia?</span>
+                        <svg class="faq-icon w-5 h-5 text-terracotta transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-6 text-warmgray text-sm leading-relaxed border-t border-terracotta/10 pt-4">
+                        Sí, aceptamos efectivo, transferencia SPEI y todas las tarjetas de débito y crédito (Visa, Mastercard y Amex) sin comisión extra.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- UBICACIÓN Y MAPA RECONSTRUIDO COMPLETAMENTE FUNCIONAL -->
+    <section id="ubicacion" class="py-20 bg-nude/30 border-t border-nude">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Información de contacto y dirección -->
+                <div class="lg:col-span-5 space-y-6 reveal">
+                    <span class="text-terracotta font-semibold text-xs tracking-widest uppercase">Encuéntranos</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-espresso">Visítanos en Puebla</h2>
+                    <p class="text-warmgray leading-relaxed text-sm sm:text-base">
+                        Estamos ubicados en una zona accesible y segura de La Paz, en Puebla.
+                    </p>
+
+                    <div class="space-y-4 pt-2">
+                        <!-- Dirección -->
+                        <div class="flex items-start gap-4 p-4 bg-white rounded-2xl border border-terracotta/15 shadow-sm">
+                            <div class="w-10 h-10 bg-nude text-terracotta rounded-xl flex items-center justify-center shrink-0 mt-0.5">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-sm text-espresso">Dirección</h4>
+                                <p class="text-xs sm:text-sm text-warmgray mt-0.5">Av. Teziutlán Sur 48, Col. La Paz, 72160 Puebla, Pue.</p>
+                                <a href="https://maps.google.com/?q=Colonia+La+Paz+Puebla" target="_blank" rel="noopener" class="inline-block text-xs font-semibold text-terracotta hover:underline mt-1">Ver en Google Maps &rarr;</a>
+                            </div>
+                        </div>
+
+                        <!-- Horarios -->
+                        <div class="flex items-start gap-4 p-4 bg-white rounded-2xl border border-terracotta/15 shadow-sm">
+                            <div class="w-10 h-10 bg-nude text-terracotta rounded-xl flex items-center justify-center shrink-0 mt-0.5">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-sm text-espresso">Horarios de Atención</h4>
+                                <p class="text-xs sm:text-sm text-warmgray mt-0.5">Lunes a Sábado: 10:00 a 19:00 hrs</p>
+                                <p class="text-xs sm:text-sm text-warmgray">Domingo: 11:00 a 16:00 hrs</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Botones de Acción de Ubicación -->
+                    <div class="flex flex-col sm:flex-row gap-4 pt-2">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Colonia+La+Paz+Puebla+Puebla" target="_blank" rel="noopener" class="bg-espresso hover:bg-black text-white text-sm font-semibold px-6 py-3.5 rounded-full text-center flex items-center justify-center gap-2 shadow-md transition-all">
+                            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                            Cómo llegar
+                        </a>
+                        <a href="https://wa.me/522221234567?text=Hola%20Aurea%20Nails,%20necesito%20indicaciones%20para%20llegar%20al%20estudio." target="_blank" rel="noopener" class="bg-terracotta hover:bg-terracotta-hover text-white text-sm font-semibold px-6 py-3.5 rounded-full text-center flex items-center justify-center gap-2 shadow-md transition-all">
+                            Preguntar por WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Google Maps Embed Interactivo Real -->
+                <div class="lg:col-span-7 reveal">
+                    <div class="relative w-full h-[380px] sm:h-[440px] rounded-3xl overflow-hidden shadow-xl border-4 border-white bg-nude">
+                        
+                        <!-- Tarjeta flotante discreta sobre el mapa -->
+                        <div class="absolute top-4 left-4 z-10 bg-white/95 backdrop-blur-md p-3.5 rounded-2xl shadow-md border border-terracotta/20 max-w-xs">
+                            <div class="flex items-center gap-2 mb-1">
+                                <span class="font-serif font-bold text-espresso text-sm">Aurea Nails Studio</span>
+                                <span class="text-xs bg-nude text-espresso px-2 py-0.5 rounded-full font-semibold">4.9 ★</span>
+                            </div>
+                            <p class="text-xs text-warmgray">Colonia La Paz, Puebla</p>
+                        </div>
+
+                        <!-- Iframe de Google Maps Estándar por Parámetro de Búsqueda -->
+                        <iframe 
+                            title="Mapa de Ubicación Aurea Nails Studio Puebla"
+                            src="https://maps.google.com/maps?q=Colonia%20La%20Paz,%20Puebla,%20Pue.&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            class="w-full h-full">
+                        </iframe>
+
+                        <!-- Enlace directo en caso de que el navegador bloquee iframe -->
+                        <div class="absolute bottom-3 right-3 z-10">
+                            <a href="https://maps.google.com/?q=Colonia+La+Paz+Puebla" target="_blank" rel="noopener" class="bg-white/90 hover:bg-white text-espresso text-[11px] font-semibold px-3 py-1.5 rounded-lg shadow border border-gray-200 backdrop-blur-sm">
+                                Abrir mapa completo ↗
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE CIERRE / CTA FINAL -->
+    <section class="py-20 bg-espresso text-cream text-center relative overflow-hidden">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 reveal">
+            <h2 class="font-serif text-3xl sm:text-5xl font-bold mb-6">¿Lista para consentirte?</h2>
+            <p class="text-terracotta-light text-base sm:text-lg max-w-2xl mx-auto mb-8 font-normal">
+                Reserva hoy y aparta tu lugar. Nos encantará darle el cuidado y estilo que tus manos merecen.
+            </p>
+            <a href="https://wa.me/522221234567?text=Hola%20Aurea%20Nails,%20quiero%20reservar%20una%20cita." target="_blank" rel="noopener" class="inline-flex items-center gap-3 bg-terracotta hover:bg-terracotta-hover text-white font-semibold px-9 py-4 rounded-full shadow-floating transition-all duration-300 transform hover:scale-105">
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                Agendar mi Cita Ahora
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-espresso border-t border-white/10 text-cream/70 text-xs py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                
+                <!-- Columna 1 Logo -->
+                <div class="space-y-3">
+                    <span class="font-serif text-2xl text-cream font-bold">Aurea</span>
+                    <p class="text-cream/60 leading-relaxed">Studio especializado en manicura rusa, esmaltado en gel de alta duración y nail art personalizado en Puebla.</p>
+                </div>
+
+                <!-- Columna 2 Contacto -->
+                <div class="space-y-2">
+                    <h4 class="font-bold text-cream uppercase tracking-wider text-xs mb-3">Contacto</h4>
+                    <p>WhatsApp: <a href="https://wa.me/522221234567" target="_blank" rel="noopener" class="hover:text-gold transition-colors">222 123 4567</a></p>
+                    <p>Instagram: <a href="https://www.instagram.com/aurea.nails.puebla" target="_blank" rel="noopener" class="hover:text-gold transition-colors">@aurea.nails.puebla</a></p>
+                    <p>Ubicación: Col. La Paz, Puebla, México.</p>
+                </div>
+
+                <!-- Columna 3 Horario -->
+                <div class="space-y-2">
+                    <h4 class="font-bold text-cream uppercase tracking-wider text-xs mb-3">Horario</h4>
+                    <p>Lunes a Sábado: 10:00 - 19:00</p>
+                    <p>Domingo: 11:00 - 16:00</p>
+                    <p class="text-terracotta-light">Atención previa cita</p>
+                </div>
+
+                <!-- Columna 4 Aviso -->
+                <div class="space-y-2">
+                    <h4 class="font-bold text-cream uppercase tracking-wider text-xs mb-3">Información</h4>
+                    <p>© 2026 Aurea Nails Studio.</p>
+                    <p class="text-cream/40 italic">Demo creada con fines de muestra estética para negocio en Puebla.</p>
+                </div>
+
+            </div>
+            
+            <div class="pt-8 border-t border-white/10 text-center text-cream/40">
+                <p>Aurea Nails Studio · Manos felices, uñas con carácter</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOTÓN FLOTANTE WHATSAPP (ABAJO A LA DERECHA) -->
+    <a href="https://wa.me/522221234567?text=Hola%20Aurea%20Nails,%20me%20gustaría%20agendar%20una%20cita." target="_blank" rel="noopener" class="fixed bottom-24 md:bottom-6 right-6 z-40 bg-[#25D366] hover:bg-[#20ba5a] text-white p-4 rounded-full shadow-2xl transition-all duration-300 transform hover:scale-110 whatsapp-pulse flex items-center justify-center" aria-label="Contacto por WhatsApp">
+        <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+    </a>
+
+    <!-- BARRA FIJA INFERIOR EN MÓVIL (NO SE ENCIMA) -->
+    <div class="fixed bottom-0 left-0 right-0 z-40 bg-cream/95 backdrop-blur-md border-t border-terracotta/20 p-3 md:hidden shadow-lg">
+        <a href="https://wa.me/522221234567?text=Hola%20Aurea%20Nails,%20quiero%20agendar%20una%20cita." target="_blank" rel="noopener" class="w-full bg-terracotta text-white font-semibold py-3 rounded-full text-center text-sm flex items-center justify-center gap-2 shadow-md">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+            Reservar Cita por WhatsApp
+        </a>
+    </div>
+
+    <!-- JAVASCRIPT VANILLA INTERACTIVO -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+
+            // 1. ANIMACIÓN DEL HEADER AL HACER SCROLL (scrollY > 30)
+            const header = document.getElementById('main-header');
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 30) {
+                    header.classList.remove('bg-cream/90', 'py-4', 'border-transparent');
+                    header.classList.add('bg-nude/95', 'py-2.5', 'shadow-md', 'border-terracotta/20');
+                } else {
+                    header.classList.remove('bg-nude/95', 'py-2.5', 'shadow-md', 'border-terracotta/20');
+                    header.classList.add('bg-cream/90', 'py-4', 'border-transparent');
+                }
+            });
+
+            // 2. MENÚ MÓVIL (HAMBURGUESA)
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const hamburgerIcon = document.getElementById('hamburger-icon');
+            const closeIcon = document.getElementById('close-icon');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+
+            function toggleMenu() {
+                mobileMenu.classList.toggle('hidden');
+                hamburgerIcon.classList.toggle('hidden');
+                closeIcon.classList.toggle('hidden');
+            }
+
+            if (mobileMenuBtn) {
+                mobileMenuBtn.addEventListener('click', toggleMenu);
+            }
+
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        toggleMenu();
+                    }
+                });
+            });
+
+            // 3. ANIMACIONES AL HACER SCROLL (REVEAL INTERSECTION OBSERVER)
+            const reveals = document.querySelectorAll('.reveal');
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.12
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, observerOptions);
+
+            reveals.forEach(el => observer.observe(el));
+
+            // 4. ACORDEÓN DE PREGUNTAS FRECUENTES (FAQ)
+            const faqToggles = document.querySelectorAll('.faq-toggle');
+            faqToggles.forEach(toggle => {
+                toggle.addEventListener('click', function() {
+                    const faqItem = this.parentElement;
+                    const content = faqItem.querySelector('.faq-content');
+                    const icon = this.querySelector('.faq-icon');
+
+                    // Cerrar los demás si se desea acordeón exclusivo
+                    document.querySelectorAll('.faq-content').forEach(otherContent => {
+                        if (otherContent !== content && !otherContent.classList.contains('hidden')) {
+                            otherContent.classList.add('hidden');
+                            const otherIcon = otherContent.parentElement.querySelector('.faq-icon');
+                            if (otherIcon) otherIcon.classList.remove('rotate-180');
+                        }
+                    });
+
+                    // Alternar actual
+                    content.classList.toggle('hidden');
+                    icon.classList.toggle('rotate-180');
+                });
+            });
+
+            // 5. GALERÍA DE FILTROS Y MODAL LIGHTBOX
+            const filterBtns = document.querySelectorAll('.gallery-filter');
+            const galleryItems = document.querySelectorAll('.gallery-item');
+            const lightboxModal = document.getElementById('lightbox-modal');
+            const lightboxImg = document.getElementById('lightbox-img');
+            const lightboxClose = document.getElementById('lightbox-close');
+            const lightboxPrev = document.getElementById('lightbox-prev');
+            const lightboxNext = document.getElementById('lightbox-next');
+
+            let currentGalleryImages = [];
+            let currentImageIndex = 0;
+
+            // Filtro por categoría
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    filterBtns.forEach(b => {
+                        b.classList.remove('bg-terracotta', 'text-white', 'active-filter');
+                        b.classList.add('bg-white', 'text-espresso');
+                    });
+                    this.classList.remove('bg-white', 'text-espresso');
+                    this.classList.add('bg-terracotta', 'text-white', 'active-filter');
+
+                    const filterValue = this.getAttribute('data-filter');
+
+                    galleryItems.forEach(item => {
+                        if (filterValue === 'todos' || item.classList.contains(filterValue)) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // Abrir Lightbox
+            function updateGalleryArray() {
+                currentGalleryImages = [];
+                galleryItems.forEach(item => {
+                    if (item.style.display !== 'none') {
+                        const img = item.querySelector('img');
+                        if (img) currentGalleryImages.push(img.src);
+                    }
+                });
+            }
+
+            galleryItems.forEach((item, index) => {
+                item.addEventListener('click', function() {
+                    updateGalleryArray();
+                    const img = this.querySelector('img');
+                    if (img) {
+                        currentImageIndex = currentGalleryImages.indexOf(img.src);
+                        lightboxImg.src = img.src;
+                        lightboxModal.classList.remove('hidden');
+                        document.body.style.overflow = 'hidden';
+                    }
+                });
+            });
+
+            function closeLightbox() {
+                lightboxModal.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }
+
+            if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+
+            if (lightboxPrev) {
+                lightboxPrev.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    if (currentGalleryImages.length === 0) return;
+                    currentImageIndex = (currentImageIndex - 1 + currentGalleryImages.length) % currentGalleryImages.length;
+                    lightboxImg.src = currentGalleryImages[currentImageIndex];
+                });
+            }
+
+            if (lightboxNext) {
+                lightboxNext.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    if (currentGalleryImages.length === 0) return;
+                    currentImageIndex = (currentImageIndex + 1) % currentGalleryImages.length;
+                    lightboxImg.src = currentGalleryImages[currentImageIndex];
+                });
+            }
+
+            // Tecla Escape para cerrar Lightbox
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && !lightboxModal.classList.contains('hidden')) {
+                    closeLightbox();
+                }
+            });
+
+            // 6. CARRUSEL AUTOMÁTICO DE TESTIMONIOS (5 SEGUNDOS, PAUSA EN HOVER)
+            const slides = document.querySelectorAll('.testimonial-slide');
+            const dots = document.querySelectorAll('#testimonial-dots .dot');
+            const prevBtn = document.getElementById('prev-testimonial');
+            const nextBtn = document.getElementById('next-testimonial');
+            const carouselContainer = document.getElementById('testimonial-carousel');
+
+            let currentSlide = 0;
+            let slideInterval;
+
+            function showSlide(index) {
+                slides.forEach((slide, i) => {
+                    if (i === index) {
+                        slide.classList.remove('opacity-0', 'pointer-events-none');
+                        slide.classList.add('opacity-100');
+                    } else {
+                        slide.classList.remove('opacity-100');
+                        slide.classList.add('opacity-0', 'pointer-events-none');
+                    }
+                });
+
+                dots.forEach((dot, i) => {
+                    if (i === index) {
+                        dot.classList.remove('bg-terracotta/30');
+                        dot.classList.add('bg-terracotta');
+                    } else {
+                        dot.classList.remove('bg-terracotta');
+                        dot.classList.add('bg-terracotta/30');
+                    }
+                });
+
+                currentSlide = index;
+            }
+
+            function nextSlide() {
+                let next = (currentSlide + 1) % slides.length;
+                showSlide(next);
+            }
+
+            function prevSlide() {
+                let prev = (currentSlide - 1 + slides.length) % slides.length;
+                showSlide(prev);
+            }
+
+            function startTimer() {
+                slideInterval = setInterval(nextSlide, 5000);
+            }
+
+            function stopTimer() {
+                clearInterval(slideInterval);
+            }
+
+            if (slides.length > 0) {
+                startTimer();
+
+                if (nextBtn) nextBtn.addEventListener('click', () => { stopTimer(); nextSlide(); startTimer(); });
+                if (prevBtn) prevBtn.addEventListener('click', () => { stopTimer(); prevSlide(); startTimer(); });
+
+                dots.forEach(dot => {
+                    dot.addEventListener('click', function() {
+                        stopTimer();
+                        const idx = parseInt(this.getAttribute('data-index'));
+                        showSlide(idx);
+                        startTimer();
+                    });
+                });
+
+                if (carouselContainer) {
+                    carouselContainer.addEventListener('mouseenter', stopTimer);
+                    carouselContainer.addEventListener('mouseleave', startTimer);
+                }
+            }
+
+        });
+    </script>
+</body>
+</html>
